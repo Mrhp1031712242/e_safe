@@ -1,0 +1,205 @@
+{
+  "id": "3634861",
+  "name": "用电安全",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "31873459",
+      "name": "基础信息",
+      "font_class": "jichuxinxi",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "31873460",
+      "name": "固件管理",
+      "font_class": "gujianguanli",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "31873461",
+      "name": "任务管理",
+      "font_class": "renwuguanli",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "31859185",
+      "name": "监测点",
+      "font_class": "jiancedian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "31859186",
+      "name": "产品型号",
+      "font_class": "chanpinxinghao",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "31859187",
+      "name": "楼栋列表",
+      "font_class": "loudongliebiao",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "31859188",
+      "name": "监测设备",
+      "font_class": "jianceshebei",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "31859189",
+      "name": "房间列表",
+      "font_class": "fangjianliebiao",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "31859190",
+      "name": "固件版本",
+      "font_class": "gujianbanben",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "31859191",
+      "name": "固件升级",
+      "font_class": "gujianshengji",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "31859192",
+      "name": "小区村居",
+      "font_class": "xiaoqucunju",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "31738595",
+      "name": "地图监控",
+      "font_class": "ditujiankong",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "31728981",
+      "name": "区域管理",
+      "font_class": "quyuguanli",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "31728985",
+      "name": "操作日志",
+      "font_class": "caozuorizhi",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "31728986",
+      "name": "部门管理",
+      "font_class": "bumenguanli",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "31728987",
+      "name": "角色管理",
+      "font_class": "jiaoseguanli",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "31728988",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "31728989",
+      "name": "推送管理",
+      "font_class": "tuisongguanli",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "31728990",
+      "name": "接口管理",
+      "font_class": "jiekouguanli",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "31728991",
+      "name": "菜单管理",
+      "font_class": "caidanguanli",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "31728992",
+      "name": "告警设置",
+      "font_class": "gaojingshezhi",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "31715671",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "31715672",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "31699339",
+      "name": "故障列表",
+      "font_class": "guzhangliebiao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "31699340",
+      "name": "监测数据",
+      "font_class": "jianceshuju",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "31699341",
+      "name": "用电统计",
+      "font_class": "yongdiantongji",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "31699342",
+      "name": "实时数据",
+      "font_class": "shishishuju",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "31699343",
+      "name": "告警列表",
+      "font_class": "gaojingliebiao",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width:1700px){
+  .plan_task_manage{
+    .show_handle_top{
+      display: none;
+    }
+    .show_handle_down{
+      display: block !important;
+    }
+  }
+}

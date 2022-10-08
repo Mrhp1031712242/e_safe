@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3634861 */
+  src: url('iconfont.woff2?t=1663314299572') format('woff2'),
+       url('iconfont.woff?t=1663314299572') format('woff'),
+       url('iconfont.ttf?t=1663314299572') format('truetype'),
+       url('iconfont.svg?t=1663314299572#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jichuxinxi:before {
+  content: "\e61c";
+}
+
+.icon-gujianguanli:before {
+  content: "\e61d";
+}
+
+.icon-renwuguanli:before {
+  content: "\e61e";
+}
+
+.icon-jiancedian:before {
+  content: "\e614";
+}
+
+.icon-chanpinxinghao:before {
+  content: "\e615";
+}
+
+.icon-loudongliebiao:before {
+  content: "\e616";
+}
+
+.icon-jianceshebei:before {
+  content: "\e617";
+}
+
+.icon-fangjianliebiao:before {
+  content: "\e618";
+}
+
+.icon-gujianbanben:before {
+  content: "\e619";
+}
+
+.icon-gujianshengji:before {
+  content: "\e61a";
+}
+
+.icon-xiaoqucunju:before {
+  content: "\e61b";
+}
+
+.icon-ditujiankong:before {
+  content: "\e613";
+}
+
+.icon-quyuguanli:before {
+  content: "\e60a";
+}
+
+.icon-caozuorizhi:before {
+  content: "\e60b";
+}
+
+.icon-bumenguanli:before {
+  content: "\e60c";
+}
+
+.icon-jiaoseguanli:before {
+  content: "\e60d";
+}
+
+.icon-yonghuguanli:before {
+  content: "\e60e";
+}
+
+.icon-tuisongguanli:before {
+  content: "\e60f";
+}
+
+.icon-jiekouguanli:before {
+  content: "\e610";
+}
+
+.icon-caidanguanli:before {
+  content: "\e611";
+}
+
+.icon-gaojingshezhi:before {
+  content: "\e612";
+}
+
+.icon-sousuo:before {
+  content: "\e608";
+}
+
+.icon-you:before {
+  content: "\e609";
+}
+
+.icon-guzhangliebiao:before {
+  content: "\e603";
+}
+
+.icon-jianceshuju:before {
+  content: "\e604";
+}
+
+.icon-yongdiantongji:before {
+  content: "\e605";
+}
+
+.icon-shishishuju:before {
+  content: "\e606";
+}
+
+.icon-gaojingliebiao:before {
+  content: "\e607";
+}
+

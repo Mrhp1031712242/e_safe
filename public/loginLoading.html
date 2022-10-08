@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoRAN基站智能节电系统</title>
+</head>
+<body>
+  <div class="login_loading">
+   登录中 ...
+  </div>
+</body>
+<script src="./baseUrl.js"></script>
+<script src="./jquery.js"></script>
+<script src="./md5.js"></script>
+<script>
+  let queryArr = window.location.search.substr(1).split("&");
+  // let loginName = queryArr[0].split("=")[1] || 'ydaq_gym';
+  let loginName = 'ydaq_gym';
+  // let loginPsd = queryArr[1].split("=")[1] || 'gym_0826';
+  let loginPsd = 'gym_0826';
+  let reqUrl = window.baseURL + "/api/rbac/auth/login";
+  let perUrl = window.baseURL + "/api/rbac/user/perCodeList/"
+  $.ajax({
+    url: reqUrl,
+    type: "POST",
+    data:JSON.stringify({
+      loginName:loginName,
+      password:hex_md5(loginPsd + loginName),
+    }),
+    contentType:"application/json;charset=utf-8",
+    success: function (res) {
+      console.log(res)
+      sessionStorage.setItem("username",res.data.userName);
+      sessionStorage.setItem("manage" + window.baseConfig.sysKey,res.data.token);
+      sessionStorage.setItem("userId",res.data.userId);
+      sessionStorage.setItem("loginName",res.data.userName);
+      perHandle(res.data.userId,res.data.token);
+      setTimeout(()=>{
+        window.location.href = "./index.html";
+      })
+    }
+  })
+
+  // $.get(reqUrl, { TokenAuthResponse: ticket },function(res){
+  //   sessionStorage.setItem("manage" + window.baseConfig.sysKey, res.data.token);
+  //   sessionStorage.setItem("userId", res.data.userId);
+  //   sessionStorage.setItem("userName", res.data.userName);
+  //   sessionStorage.setItem("loginName", res.data.loginName);
+  //   sessionStorage.setItem("accItemShow", true);
+  //   perHandle(res.data.userId,res.data.token)
+  //   setTimeout(()=>{
+  //     window.location.href = "./index.html";
+  //   })
+  // })
+
+
+  function perHandle(userId,token){
+    $.ajax({
+      headers: {
+        "authorization": token
+      },
+      type: "POST",
+      url: perUrl + userId,
+      contentType: "application/x-www-form-urlencoded",
+      success: function (data) {
+        let newArr = [];
+        data.data.forEach(item=>{
+          newArr.push(+item)
+        })
+        sessionStorage.setItem('permissionArr',JSON.stringify(newArr));
+      },
+    });
+  }
+</script>
+</html>
