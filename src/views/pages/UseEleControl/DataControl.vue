@@ -18,13 +18,13 @@
             </template>
           </ul>
           <ul class="rihgt_status_wrap">
-            <li :class="[!!rightStatus.isOnline ? 'online_status' : 'unOnline_status']" v-if="!!rightStatus.isMeterId">
+            <li :class="[!!rightStatus.isOnline ? 'online_status' : 'unOnline_status']">
               <span>设备：</span>
-              <span>{{!!rightStatus.isOnline  ? '在线' : '掉线'}}</span>
+              <span>{{rightStatus.isOnlineName}}</span>
             </li>
-            <li :class="[!!rightStatus.isMeterId ? 'online_status' : 'unOnline_status']" v-if="!rightStatus.isMeterId">
+            <li :class="[!!rightStatus.isMeterId ? 'online_status' : 'unOnline_status']">
               <span>电表：</span>
-              <span>{{!!rightStatus.isMeterId ? '已接入' : '未接入'}}</span>
+              <span>{{rightStatus.isMeterIdName}}</span>
             </li>
           </ul>
         </div>
@@ -97,7 +97,9 @@ export default defineComponent({
     // 是否在线、电表接入
     const rightStatus = reactive({
       isOnline:false,
+      isOnlineName:"掉线",
       isMeterId:false,
+      isMeterIdName:'未接入'
     })
 
     onMounted(()=>{
@@ -121,8 +123,10 @@ export default defineComponent({
       alarmStatusName.value = item.alarmStatusName;
       moniItem.obj = item;
 
-      rightStatus.isOnline = !!item.portOnline;
-      rightStatus.isMeterId = !!item.rs485;
+      rightStatus.isOnline = item.online == '0' ? true : false;
+      rightStatus.isOnlineName = item.online == '0' ? '在线' : '掉线';
+      rightStatus.isMeterId = !!item.rs485 ? !!item.portOnline ? true : false : false;
+      rightStatus.isMeterIdName = !!item.rs485 ? !!item.portOnline ? '在线' : '掉线' : '未接入';
       if(!item.rs485){
         activeName.value = "2";
         labelList.list = labelList.list.filter(item=>item.id != '1');
