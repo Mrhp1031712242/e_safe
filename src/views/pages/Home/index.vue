@@ -142,7 +142,7 @@ export default defineComponent({
     const router = useRouter()
     // 顶部
     const topList = reactive({list:[
-      {key:"villageSum", name:"小区/村居11（个）",value:0 },
+      {key:"villageSum", name:"小区/村居（个）",value:0 },
       {key:"bulidingSum", name:"监测楼栋（栋）",value:0 },
       {key:"monitorSum", name:"监测点位（个）",value:0 },
       {key:"deviceSum", name:"设备总数（台）",value:0 },
